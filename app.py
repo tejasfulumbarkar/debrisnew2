@@ -98,9 +98,7 @@ if uploaded_files and len(uploaded_files) == 2:
 
         # Predict debris or not
         debris_label = rfc_model.predict([feature_vector])[0]
-        st.write(f"Object: {obj['label']}, Is Debris: {'Yes' if debris_label == 1 else 'No'}")
-    else:
-        st.error("Bounding box data is missing or invalid for this object.")
+       
 
 
 
