@@ -41,9 +41,7 @@ def detect_objects(image_path):
     return detected_objects, results[0].plot()
 
 
-# Streamlit app
 
-import streamlit as st
 
 # Inject custom CSS for styling
 st.markdown(
