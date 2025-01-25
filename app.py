@@ -42,7 +42,35 @@ def detect_objects(image_path):
 
 
 # Streamlit app
-st.title("Space Debris Detection and Classification")
+
+import streamlit as st
+
+# Inject custom CSS for styling
+st.markdown(
+    """
+    <style>
+    /* Base style for the heading */
+    .custom-heading {
+        font-size: 2.75rem; /* Default font size */
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+    }
+
+    /* Responsive style for screens smaller than 600px */
+    @media (max-width: 600px) {
+        .custom-heading {
+            font-size: 1rem; /* Smaller font size */
+        }
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Add a heading with the custom class
+st.markdown('<h1 class="custom-heading">Space Debris Detection and Classification</h1>', unsafe_allow_html=True)
+
 
 st.write("""
 Upload two images, and this application will:
