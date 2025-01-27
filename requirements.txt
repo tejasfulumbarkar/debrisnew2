@@ -47,7 +47,7 @@ nbformat==5.10.4
 networkx==3.4.2
 numpy==1.26.0
 
-opencv-python-headless==4.7.0.72
+opencv-python-headless
 
 packaging==24.2
 pandas==2.2.3
