@@ -45,7 +45,7 @@ nbclient==0.10.2
 nbconvert==7.16.5
 nbformat==5.10.4
 networkx==3.4.2
-numpy==1.24.2  # Corrected numpy version
+numpy==1.26.0
 opencv-python  # Replaced opencv-python-headless with opencv-python
 packaging==24.2
 pandas==2.2.3
