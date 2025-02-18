@@ -14,19 +14,6 @@ def load_css(file_name:str)->str:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 
-st.markdown(
-    """
-    <style>
-        iframe { 
-            pointer-events: none !important; 
-        }
-        body {
-            pointer-events: auto !important;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 yolo_model = YOLO('best2.pt')
 
