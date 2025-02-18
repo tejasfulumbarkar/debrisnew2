@@ -52,7 +52,9 @@ def classify_and_predict(image_path):
     return "No debris detected in the image.", image
 
 # Streamlit UI
-st.title("Space Debris Detection and Classification")
+st.title("🔍 Detecting and Classifying Space Debris with AI 🚀")
+st.markdown("**🌍 Using AI to detect, classify, and track space debris for a cleaner orbit. ✨**")
+
 uploaded_file = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
 if uploaded_file is not None:
     # Save uploaded file
