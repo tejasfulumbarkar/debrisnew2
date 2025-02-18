@@ -7,6 +7,27 @@ import cv2
 import time
 
 # Load YOLOv8 model
+
+
+def load_css(file_name:str)->str:
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+
+st.markdown(
+    """
+    <style>
+        iframe { 
+            pointer-events: none !important; 
+        }
+        body {
+            pointer-events: auto !important;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 yolo_model = YOLO('best2.pt')
 
 # Load Random Forest Classifier
