@@ -14,6 +14,28 @@ def load_css(file_name:str)->str:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 
+st.markdown(
+    """
+    <style>
+        /* Allow interactions inside the iframe */
+        iframe { 
+            pointer-events: auto !important;  
+        }
+        
+        /* Disable pointer events only for unnecessary UI elements */
+        .stApp {
+            overflow: hidden !important;
+        }
+        
+        /* If an orb effect is interfering, ensure it allows clicks */
+        
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
 
 yolo_model = YOLO('best2.pt')
 
